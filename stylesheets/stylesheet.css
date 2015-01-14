@@ -1,4 +1,43 @@
-body {
-  background-color: black;
-  color: white;
+h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+.image-bubble {
+  position: absolute;
+  border-radius: 50%;
+  width: 30%;
+  margin: 20% 5% 20% 5%;
+}
+
+.right {
+  right: 3%;
+}
+
+.left {
+  left: 3%;
+}
+
+#one {
+  top: 0%;
+}
+
+#two {
+  top: 50%;
+}
+
+#three {
+  top: 100%;
+}
+
+#four {
+  top: 150%;
+}
+
+#five {
+  top: 200%;
+}
+
+#six {
+  top: 250%;
 }
