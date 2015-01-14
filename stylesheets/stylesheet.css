@@ -1,0 +1,61 @@
+h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+.blurb {
+  display: none;
+  position: absolute;
+  border: 1em solid black ;
+  width: 30%;
+  margin: 40% 5% 40% 5%;
+}
+
+
+.image-bubble {
+  position: absolute;
+  border-radius: 50%;
+  width: 30%;
+  margin: 20% 5% 20% 5%;
+}
+.blurb.right {
+  right: 25%;
+}
+
+.blurb.left {
+  left: 25%;
+}
+
+.right {
+  right: 3%;
+}
+
+.left {
+  left: 3%;
+}
+
+
+
+#one {
+  top: 0%;
+}
+
+#two {
+  top: 50%;
+}
+
+#three {
+  top: 100%;
+}
+
+#four {
+  top: 150%;
+}
+
+#five {
+  top: 200%;
+}
+
+#six {
+  top: 250%;
+}
