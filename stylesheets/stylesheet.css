@@ -3,11 +3,27 @@ h1 {
   text-align: center;
 }
 
+.blurb {
+  display: none;
+  position: absolute;
+  border: 1em solid black ;
+  width: 30%;
+  margin: 40% 5% 40% 5%;
+}
+
+
 .image-bubble {
   position: absolute;
   border-radius: 50%;
   width: 30%;
   margin: 20% 5% 20% 5%;
+}
+.blurb.right {
+  right: 25%;
+}
+
+.blurb.left {
+  left: 25%;
 }
 
 .right {
@@ -17,6 +33,8 @@ h1 {
 .left {
   left: 3%;
 }
+
+
 
 #one {
   top: 0%;
