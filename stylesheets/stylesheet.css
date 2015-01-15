@@ -6,56 +6,63 @@ h1 {
 .blurb {
   display: none;
   position: absolute;
-  border: 1em solid black ;
+  background-color: white;
+  border: 1em solid black;
   width: 30%;
-  margin: 40% 5% 40% 5%;
+  margin: 20% 0 40% 0;
 }
 
 
 .image-bubble {
   position: absolute;
   border-radius: 50%;
-  width: 30%;
+  width: 15%;
+  height: 35%;
   margin: 20% 5% 20% 5%;
-}
-.blurb.right {
-  right: 25%;
-}
-
-.blurb.left {
-  left: 25%;
 }
 
 .right {
-  right: 3%;
+  right: 12%;
 }
 
 .left {
-  left: 3%;
+  left: 12%;
 }
 
-
-
-#one {
-  top: 0%;
+#one, #two {
+  top: -10%;
 }
 
-#two {
+/*#two {
+  top: 20%;
+}*/
+
+#three, #four {
   top: 50%;
 }
 
-#three {
+/*#four {
+  top: 60%;
+}*/
+
+#five, #six {
+  top: 110%;
+}
+
+/*#six {
   top: 100%;
+}*/
+
+.blurb#one, .blurb#three, .blurb#five {
+  right: 30%;
 }
 
-#four {
-  top: 150%;
+.blurb#two, .blurb#four, .blurb#six {
+  left: 30%;
 }
 
-#five {
-  top: 200%;
-}
 
-#six {
-  top: 250%;
+.image-bubble:hover {
+  width: 27%;
+  height: 60%;
 }
