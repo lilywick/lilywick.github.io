@@ -28,42 +28,31 @@ h1 {
 
 
 .right {
-  right: 12%;
+  right: 8%;
 }
 
 .left {
-  left: 12%;
+  left: 8%;
 }
 
 #one, #two {
-  top: -10%;
+  top: 10%;
 }
-
-/*#two {
-  top: 20%;
-}*/
 
 #three, #four {
-  top: 50%;
+  top: 70%;
 }
 
-/*#four {
-  top: 60%;
-}*/
-
-#five, #six {
-  top: 110%;
+#five {
+  top: -10%;
+  left: 37%;
 }
-
-/*#six {
-  top: 100%;
-}*/
 
 .blurb#one, .blurb#three, .blurb#five {
   right: 30%;
 }
 
-.blurb#two, .blurb#four, .blurb#six {
+.blurb#two, .blurb#four{
   left: 30%;
 }
 
@@ -72,16 +61,23 @@ h1 {
 }
 
 
-
-.blurb#five, .blurb#six {
-  margin: 0 0 0 0;
+.blurb#five {
+  margin: 40% 0 0 -4%;
 }
 
 
 .image-bubble:hover {
   width: 27%;
   height: 60%;
+  margin-left: 0;
 }
+
+.image-bubble.right:hover {
+  width: 27%;
+  height: 60%;
+  margin-right: 0%;
+}
+
 
 @media only screen and (max-width: 1260px){
 .image-bubble {
@@ -118,7 +114,7 @@ h1 {
   right: 5%;
 }
 
-.blurb#two, .blurb#four, .blurb#six {
+.blurb#two, .blurb#four{
   left: 5%;
 }
 #one {
@@ -141,6 +137,4 @@ h1 {
   top: 140%;
 }
 
-#six{
-  top: 170%;
- }}
+}
