@@ -21,8 +21,8 @@ h1 {
 .image-bubble {
   position: absolute;
   border-radius: 50%;
-  width: 16%;
-  height: 35%;
+  width: 15%;
+  height: 36%;
   margin: 20% 5% 20% 5%;
 }
 
@@ -73,6 +73,13 @@ h1 {
 .blurb#six {
   margin: -25% 0 0 -4%;
 }
+
+.image-bubble#six{
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+/*  margin-right: 21%;
+*/}
 
 
 .image-bubble:hover {
