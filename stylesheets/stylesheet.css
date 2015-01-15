@@ -88,8 +88,8 @@ h1 {
  }
 
 .image-bubble:hover {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 30%;
 }
 
 .blurb {
