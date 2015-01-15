@@ -88,19 +88,42 @@ h1 {
  }
 
 .image-bubble:hover {
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
 }
 
-#one, #two {
+.blurb {
+  border-radius: 5%;
+  width: 50%;
+}
+
+.blurb#one, .blurb#three, .blurb#five {
+  right: 5%;
+}
+
+.blurb#two, .blurb#four, .blurb#six {
+  left: 5%;
+}
+#one {
   top: 20%;
 }
 
-#three, #four {
-  top: 60%;
+#two {
+  top: 50%;
 }
 
-#five, #six {
-  top: 100%;
+#three {
+  top: 70%;
 }
- }
+
+#four {
+  top: 90%;
+}
+
+#five {
+  top: 110%;
+}
+
+#six{
+  top: 120%;
+ }}
