@@ -65,8 +65,14 @@ h1 {
   left: 30%;
 }
 
-.blurb#five, .blurb#six {
+.blurb#three, .blurb#four {
   margin: 10% 0 0 0;
+}
+
+
+
+.blurb#five, .blurb#six {
+  margin: 0 0 0 0;
 }
 
 
