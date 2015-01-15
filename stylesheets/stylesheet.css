@@ -80,3 +80,27 @@ h1 {
   width: 27%;
   height: 60%;
 }
+
+@media only screen and (orientation: portrait){
+.image-bubble {
+  width: 30%;
+  height: 30%;
+ }
+
+.image-bubble:hover {
+  width: 60%;
+  height: 60%;
+}
+
+#one, #two {
+  top: 20%;
+}
+
+#three, #four {
+  top: 60%;
+}
+
+#five, #six {
+  top: 100%;
+}
+ }
