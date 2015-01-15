@@ -48,6 +48,11 @@ h1 {
   left: 37%;
 }
 
+#six {
+  top: 90%;
+  left: 37%;
+}
+
 .blurb#one, .blurb#three, .blurb#five {
   right: 30%;
 }
@@ -57,12 +62,16 @@ h1 {
 }
 
 .blurb#three, .blurb#four {
-  margin: 10% 0 0 0;
+  margin: 0 0 0 0;
 }
 
 
 .blurb#five {
-  margin: 40% 0 0 -4%;
+  margin: 47% 0 0 -4%;
+}
+
+.blurb#six {
+  margin: -25% 0 0 -4%;
 }
 
 
