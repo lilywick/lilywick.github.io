@@ -24,6 +24,7 @@ h1 {
   margin: 20% 5% 20% 5%;
 }
 
+
 .right {
   right: 12%;
 }
@@ -62,6 +63,10 @@ h1 {
 
 .blurb#two, .blurb#four, .blurb#six {
   left: 30%;
+}
+
+.blurb#five, .blurb#six {
+  margin: 10% 0 0 0;
 }
 
 
