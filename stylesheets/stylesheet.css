@@ -60,28 +60,30 @@ h1 {
   right: 30vw;
 }
 
-.blurb#two, .blurb#four{
-  left: 31vw;
+.blurb#two {
+  width: 40vw;
+  margin: 45vh 0 0 17vw;
 }
+
 .blurb#three {
-  margin: -8vw 0 0 0;
+  margin: 28vh 2vw 0 0;
 }
 
 .blurb#four {
   margin: 0 0 0 0;
-}
+  left: 31vw;
+ }
 
 
 .blurb#five {
   margin: 45vw 0 0 -1.5vw;
-  width: 45vw;
-  left: 27vw;
 }
 
 .blurb#six {
   margin: 70vh 0 0 0;
   left: 8vw;
   width: 80vw;
+  border-radius: 25%;
 }
 
 .image-bubble#six{
@@ -114,7 +116,8 @@ h1 {
 }
 
 .image-bubble.right:hover {
-  margin-right: 0vw;}
+  margin-right: 0vw;
+}
 
 
 @media only screen and (max-width: 1260px){
