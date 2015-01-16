@@ -6,6 +6,7 @@ h1 {
 
 .title {
   text-align: center;
+  text-decoration: underline;
 }
 
 .blurb {
