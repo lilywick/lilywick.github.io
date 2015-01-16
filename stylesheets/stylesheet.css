@@ -12,145 +12,139 @@ h1 {
   background-color: white;
   border: 0.2em solid black;
   border-radius: 20%;
-  width: 30%;
-  margin: 20% 0 40% 0;
-  padding: 2%;
+  width: 30vw;
+  margin: 20vw 0 40vw 0;
+  padding: 2vw
 }
-
 
 .image-bubble {
   position: absolute;
-  border-radius: 50%;
-  width: 15%;
-  height: 36%;
-  margin: 20% 5% 20% 5%;
+  border-radius: 50%;  
+  height: 20vw;
+  width: 20vw;
+  margin: 20vw 5vw 20vw 5vw;
 }
 
 
 .right {
-  right: 8%;
+  right: 5vw;
 }
 
 .left {
-  left: 8%;
+  left: 5vw;
 }
 
 #one, #two {
-  top: 10%;
+  top: 20vh;
 }
 
 #three, #four {
-  top: 70%;
+  top: 70vh;
 }
 
 #five {
-  top: -10%;
-  left: 37%;
+  top: -5vh;  left: 34.5vw;
 }
 
 #six {
-  top: 90%;
-  left: 37%;
+  top: 100vh;  left: 35vw;
 }
 
 .blurb#one, .blurb#three, .blurb#five {
-  right: 30%;
+  right: 30vw;
 }
 
 .blurb#two, .blurb#four{
-  left: 30%;
+  left: 31vw;
+}
+.blurb#three {
+  margin: -8vw 0 0 0;
 }
 
-.blurb#three, .blurb#four {
+.blurb#four {
   margin: 0 0 0 0;
 }
 
 
 .blurb#five {
-  margin: 47% 0 0 -4%;
+  margin: 49vw 0 0 -1.5vw;
 }
 
 .blurb#six {
-  margin: -25% 0 0 -4%;
+  margin: -66vh 0 0 -2vw;
 }
 
 .image-bubble#six{
   -ms-transform: rotate(90deg); /* IE 9 */
   -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
   transform: rotate(90deg);
-/*  margin-right: 21%;
-*/}
+  top: 95vh;}
 
+.image-bubble#one:hover, .image-bubble#two:hover {
+ top: -5vh;
+}
+
+.image-bubble#three:hover, .image-bubble#four:hover {
+ top: 66vh;
+}
+
+.image-bubble#six:hover {
+ top: 80vh; 
+ left: 33.5vw;
+}
+
+.image-bubble#five:hover {
+ top: -15vh; right: 33.5vw;}
 
 .image-bubble:hover {
-  width: 27%;
-  height: 60%;
+  width: 33vw;
+  height: 33vw;
   margin-left: 0;
 }
 
 .image-bubble.right:hover {
-  width: 27%;
-  height: 60%;
-  margin-right: 0%;
-}
+  margin-right: 0vw;}
 
 
 @media only screen and (max-width: 1260px){
 .image-bubble {
-  width: 15%;
-  height: 30%;
- }
+  width: 15vw;  height: 30vw; }
 }
 
 @media only screen and (max-width: 1000px){
 .image-bubble {
-  width: 20%;
-  height: 30%;
- }
+  width: 20vw;  height: 30vw; }
 }
 
 
 @media only screen and (orientation: portrait){
 .image-bubble {
-  width: 50%;
-  height: 30%;
- }
+  width: 50vw;  height: 30vw; }
 
 .image-bubble:hover {
-  width: 50%;
-  height: 30%;
-}
+  width: 50vw;  height: 30vw;}
 
 .blurb {
-  border-radius: 5%;
-  width: 50%;
-}
+  border-radius: 5vw;  width: 50vw;}
 
 .blurb#one, .blurb#three, .blurb#five {
-  right: 5%;
-}
+  right: 5vw;}
 
 .blurb#two, .blurb#four{
-  left: 5%;
-}
+  left: 5vw;}
 #one {
-  top: 20%;
-}
+  top: 20vw;}
 
 #two {
-  top: 50%;
-}
+  top: 50vw;}
 
 #three {
-  top: 80%;
-}
+  top: 80vw;}
 
 #four {
-  top: 110%;
-}
+  top: 110vw;}
 
 #five {
-  top: 140%;
-}
+  top: 140vw;}
 
 }
