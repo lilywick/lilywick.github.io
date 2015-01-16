@@ -73,7 +73,9 @@ h1 {
 
 
 .blurb#five {
-  margin: 49vw 0 0 -1.5vw;
+  margin: 45vw 0 0 -1.5vw;
+  width: 45vw;
+  left: 27vw;
 }
 
 .blurb#six {
