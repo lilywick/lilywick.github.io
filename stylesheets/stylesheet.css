@@ -86,9 +86,9 @@ h1 {
 }
 
 .image-bubble#six{
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-  transform: rotate(90deg);
+/*  -ms-transform: rotate(90deg); /* IE 9 */
+/*  -webkit-transform: rotate(90deg);*/ /* Chrome, Safari, Opera */
+/*  transform: rotate(90deg);*/
   top: 60vh;
 }
 
@@ -132,10 +132,10 @@ h1 {
 
 @media only screen and (orientation: portrait){
 .image-bubble {
-  width: 50vw;  height: 30vw; }
+  width: 50vw;  height: 50vw; }
 
 .image-bubble:hover {
-  width: 50vw;  height: 30vw;}
+  width: 50vw;  height: 50vw;}
 
 .blurb {
   border-radius: 5vw;  width: 50vw;}
@@ -172,9 +172,4 @@ h1 {
   top: 170vh;
 }
 
-.image-bubble#six{
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-  transform: rotate(90deg);
-}
 }
