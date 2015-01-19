@@ -165,10 +165,12 @@ h1 {
 }
 
 #five {
+  left: 5vw;
   top: 140vh;
 }
 
 #six {
+  right: 5vw;
   top: 170vh;
 }
 
