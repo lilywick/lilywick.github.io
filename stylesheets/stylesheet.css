@@ -141,23 +141,40 @@ h1 {
   border-radius: 5vw;  width: 50vw;}
 
 .blurb#one, .blurb#three, .blurb#five {
-  right: 5vw;}
+  right: 5vw;
+}
 
 .blurb#two, .blurb#four{
-  left: 5vw;}
+  left: 5vw;
+}
+
 #one {
-  top: 20vw;}
+  top: 20vw;
+}
 
 #two {
-  top: 50vw;}
+  top: 50vw;
+}
 
 #three {
-  top: 80vw;}
+  top: 80vw;
+}
 
 #four {
-  top: 110vw;}
+  top: 110vw;
+}
 
 #five {
-  top: 140vw;}
+  top: 140vw;
+}
 
+#six {
+  top: 170vw;
+}
+
+.image-bubble#six{
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
 }
