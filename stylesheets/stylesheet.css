@@ -122,12 +122,9 @@ h1 {
   width: 50vw;  height: 50vw; 
 }
 
-.image-bubble:hover {
-  width: 50vw;  height: 50vw;
-}
-
 .blurb {
-  border-radius: 5vw;  width: 50vw;
+  border-radius: 5vw !important;  
+  width: 50vw !important;
 }
 
 .blurb#one, .blurb#three, .blurb#five {
@@ -142,16 +139,35 @@ h1 {
   top: 20vh;
 }
 
+.image-bubble#one:hover {
+  top: 20vh;
+  width: 50vw;  height: 50vw; 
+}
+
 #two {
   top: 50vh;
+}
+
+.image-bubble#two:hover {
+  top: 50vh;
+  width: 50vw;  height: 50vw; 
 }
 
 #three {
   top: 80vh;
 }
 
+.image-bubble#three:hover {
+  top: 80vh;
+  width: 50vw;  height: 50vw; 
+}
+
 #four {
   top: 110vh;
+}
+.image-bubble#four:hover {
+  top: 110vh;
+  width: 50vw;  height: 50vw; 
 }
 
 #five {
@@ -159,9 +175,19 @@ h1 {
   top: 140vh !important;
 }
 
+.image-bubble#five:hover {
+  top: 140vh;
+  width: 50vw;  height: 50vw; 
+}
+
 #six {
   right: 5vw ;
   top: 170vh !important;
+}
+
+.image-bubble#six:hover {
+  top: 170vh;
+  width: 50vw;  height: 50vw ; 
 }
 
 }
