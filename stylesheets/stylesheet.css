@@ -186,12 +186,12 @@ h1 {
 }
 
 .image-bubble#six:hover {
-  top: 170vh;
+  top: 170vh !important;
   width: 50vw;  height: 50vw ; 
 }
 
 .blurb#six {
-  bottom: -10vh;
+  top: 150vh !important;
 }
 
 }
