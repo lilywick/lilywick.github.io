@@ -127,7 +127,7 @@ h1 {
   width: 50vw !important;
 }
 
-.blurb#one, .blurb#three {
+.blurb#one, .blurb#three, .blurb#five {
   right: 5vw;
 }
 
