@@ -86,9 +86,6 @@ h1 {
 }
 
 .image-bubble#six{
-/*  -ms-transform: rotate(90deg); /* IE 9 */
-/*  -webkit-transform: rotate(90deg);*/ /* Chrome, Safari, Opera */
-/*  transform: rotate(90deg);*/
   top: 60vh;
 }
 
@@ -106,7 +103,8 @@ h1 {
 }
 
 .image-bubble#five:hover {
- top: -15vh; right: 33.5vw;}
+ top: -15vh; right: 33.5vw;
+}
 
 .image-bubble:hover {
   width: 33vw;
@@ -119,37 +117,29 @@ h1 {
 }
 
 
-@media only screen and (max-width: 1260px){
-.image-bubble {
-  width: 15vw;  height: 30vw; }
-}
-
-@media only screen and (max-width: 1000px){
-.image-bubble {
-  width: 20vw;  height: 30vw; }
-}
-
-
 @media only screen and (orientation: portrait){
 .image-bubble {
-  width: 50vw;  height: 50vw; }
+  width: 50vw;  height: 50vw; 
+}
 
 .image-bubble:hover {
-  width: 50vw;  height: 50vw;}
+  width: 50vw;  height: 50vw;
+}
 
 .blurb {
-  border-radius: 5vw;  width: 50vw;}
+  border-radius: 5vw;  width: 50vw;
+}
 
 .blurb#one, .blurb#three, .blurb#five {
   right: 5vw;
 }
 
-.blurb#two, .blurb#four{
+.blurb#two, .blurb#four, .blurb#six{
   left: 5vw;
 }
 
 #one {
-  top: 20vw;
+  top: 20vh;
 }
 
 #two {
@@ -170,7 +160,7 @@ h1 {
 }
 
 #six {
-  right: 5vw !important;
+  right: 5vw ;
   top: 170vh !important;
 }
 
