@@ -127,11 +127,11 @@ h1 {
   width: 50vw !important;
 }
 
-.blurb#one, .blurb#three, .blurb#five {
+.blurb#one, .blurb#three {
   right: 5vw;
 }
 
-.blurb#two, .blurb#four, .blurb#six{
+.blurb#two, .blurb#four, .blurb#five, .blurb#six{
   left: 5vw;
 }
 
@@ -149,8 +149,12 @@ h1 {
 }
 
 .image-bubble#two:hover {
-  top: 30vh;
+  top: 50vh;
   width: 50vw;  height: 50vw; 
+}
+
+.blurb#two {
+  top:30vh;
 }
 
 #three {
