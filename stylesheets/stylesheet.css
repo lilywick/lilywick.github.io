@@ -190,4 +190,8 @@ h1 {
   width: 50vw;  height: 50vw ; 
 }
 
+.blurb#six {
+  bottom: -10vh;
+}
+
 }
