@@ -149,7 +149,7 @@ h1 {
 }
 
 .image-bubble#two:hover {
-  top: 50vh;
+  top: 30vh;
   width: 50vw;  height: 50vw; 
 }
 
