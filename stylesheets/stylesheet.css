@@ -131,7 +131,7 @@ h1 {
   right: 5vw;
 }
 
-.blurb#two, .blurb#four, .blurb#five, .blurb#six{
+.blurb#two, .blurb#four, .blurb#six{
   left: 5vw;
 }
 
@@ -182,6 +182,10 @@ h1 {
 .image-bubble#five:hover {
   top: 140vh;
   width: 50vw;  height: 50vw; 
+}
+
+.blurb#five {
+  right: 5vw !important;
 }
 
 #six {
