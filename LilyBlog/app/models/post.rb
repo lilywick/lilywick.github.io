@@ -3,4 +3,5 @@ class Post < ActiveRecord::Base
   friendly_id :title, use: :slugged 
   validates :title, uniqueness: true 
   validates :body, presence: true 
+  validates :color, presence: true
 end 

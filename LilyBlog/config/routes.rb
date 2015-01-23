@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :posts
 
+
+
+  root "posts#new"
+# devise_for :users, :as => "", :path_names => { :sign_in => "login", :sign_out => "logout" } 
+
+# devise_scope :user do
+#   get "register", to: "users/registrations#new"
+# end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
