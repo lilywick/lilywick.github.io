@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
 
 
-  root "posts#new"
+  root "posts#index"
 # devise_for :users, :as => "", :path_names => { :sign_in => "login", :sign_out => "logout" } 
 
 # devise_scope :user do
