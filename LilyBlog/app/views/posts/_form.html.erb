@@ -16,12 +16,12 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :image%><br>
+    <%= f.label :image, "Upload an image file" %><br>
     <%= f.file_field :image %>
   </div>
   <div class="field">
     <%= f.label :remote_image_url, "or image URL"%><br>
-    <%= f.file_field :remote_image_url %>
+    <%= f.text_field :remote_image_url %>
   </div>
   <div class="field">
     <%= f.label :body%><br>
