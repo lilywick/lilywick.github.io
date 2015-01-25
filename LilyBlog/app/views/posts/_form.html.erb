@@ -12,25 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :title, "Post Title" %><br>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :image, "Upload an image file" %><br>
+    <%= f.label :image, "Upload an image file from your computer:" %><br>
     <%= f.file_field :image %>
   </div>
   <div class="field">
-    <%= f.label :remote_image_url, "or image URL"%><br>
+    <%= f.label :remote_image_url, "...or, enter a URL for an image:" %><br>
     <%= f.text_field :remote_image_url %>
   </div>
   <div class="field">
-    <%= f.label :body%><br>
+    <%= f.label :body, "Write something about this image (optional)" %><br>
     <%= f.text_area :body %>
   </div>
+
   <div class="field">
-    <%= f.label :color %><br>
-    <%= f.text_field :color %>
-  </div>
+    <%= f.label :category_id, "What category does this fall under?" %><br> 
+    <%= f.collection_select(:posts_category_id, Category.all, :id, :category_name, :include_blank => "Please select") %>
+  </div> 
+
+  <div class="field">
+    <%= f.label :color_id, "Choose a color for this post" %><br> 
+    <%= f.collection_select(:posts_color_id, Color.all, :id, :color_name, :include_blank => "Please select") %>
+  </div>  
+
   <div class="actions">
     <%= f.submit %>
   </div>

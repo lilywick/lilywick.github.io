@@ -3,7 +3,8 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |t|
       t.string :title
       t.text :body
-      t.string :color
+      t.references :posts_category
+      t.references :posts_color
 
       t.timestamps
     end

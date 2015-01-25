@@ -11,12 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150123230735) do
+ActiveRecord::Schema.define(version: 20150125182441) do
+
+  create_table "categories", force: true do |t|
+    t.string  "category_name"
+    t.integer "posts_category_id"
+  end
+
+  create_table "colors", force: true do |t|
+    t.string  "color_name"
+    t.integer "posts_color_id"
+  end
 
   create_table "posts", force: true do |t|
     t.string   "title"
     t.text     "body"
-    t.string   "color"
+    t.integer  "posts_category_id"
+    t.integer  "posts_color_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "slug"
@@ -24,6 +35,16 @@ ActiveRecord::Schema.define(version: 20150123230735) do
   end
 
   add_index "posts", ["slug"], name: "index_posts_on_slug"
+
+  create_table "posts_categories", force: true do |t|
+    t.integer "post_id"
+    t.integer "category_id"
+  end
+
+  create_table "posts_colors", force: true do |t|
+    t.integer "post_id"
+    t.integer "color_id"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
