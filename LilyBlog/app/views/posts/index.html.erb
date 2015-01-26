@@ -5,17 +5,14 @@
 
 <div class="post-container">
 
-    <% @posts.each do |post| %>
-      <div class="post">
-
+  <% @posts.each do |post| %>
+    <div class="post">
       <div class="image">
         <%= link_to post_path(post.id) do %>
         <%= image_tag(post.image_url.to_s)%>
       <% end %>
       </div>
-
-    
-      </div>
-    <% end %>
+    </div>
+  <% end %>
 
 </div>
