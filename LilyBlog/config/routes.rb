@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
 
   root "posts#index"
-  devise_for :users, :as => "", :path_names => { :sign_in => "login", :sign_out => "logout" } 
+  devise_for :users, :path_names => { :sign_in => "login", :sign_out => "logout" } 
+  # post "posts/update" => "posts#update", :as => "posts/update"
 
 # devise_scope :user do
 #   get "register", to: "users/registrations#new"
