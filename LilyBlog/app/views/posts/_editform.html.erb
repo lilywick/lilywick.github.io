@@ -1,0 +1,37 @@
+<%= form_for @post, url: {action: "update"}, method: "patch" do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title, "Post Title" %><br>
+    <%= f.text_field :title %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :body, "Write something about this image (optional)" %><br>
+    <%= f.text_area :body %>
+  </div>
+
+  <div class="field">
+    <%= f.label :category_id, "What category does this fall under?" %><br> 
+    <%= f.collection_select(:posts_category_id, Category.all, :id, :category_name, :include_blank => "Please select") %>
+  </div> 
+
+  <div class="field">
+    <%= f.label :color_id, "Choose a color for this post" %><br> 
+    <%= f.collection_select(:posts_color_id, Color.all, :id, :color_name, :include_blank => "Please select") %>
+  </div>  
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
