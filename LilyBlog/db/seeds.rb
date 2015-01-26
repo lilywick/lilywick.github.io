@@ -10,4 +10,4 @@ test_user = User.create(email: "carbajal.patricia@gmail.com", password: "petrem0
 
 test_categories = Category.create([{category_name: "Pups and Pigs"}, {category_name: "Trinkets"}, {category_name: "Accoutrements"}, {category_name: "Shoes"}, {category_name: "Interior"}, {category_name: "Clothing"}, {category_name: "Things I Get A Kick Out Of"}])
 
-test_colors = Color.create([{color_name: "Red"}, {color_name: "blue"}, {color_name: "green"}, {color_name: "black"}, {color_name: "yellow"}, {color_name: "orange"}, {color_name: "purple"}])
+test_colors = Color.create([{color_name: "Red"}, {color_name: "blue"}, {color_name: "green"}, {color_name: "black"}, {color_name: "white"}, {color_name: "pink"}, {color_name: "yellow"}, {color_name: "orange"}, {color_name: "purple"}])
