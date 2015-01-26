@@ -11,7 +11,32 @@
   max-height: 600px;
   margin: 0%;
   border: 1px solid black;
+  z-index: -1;
 }
 
-.image {
+.modal {
+  background-color: black;
+  display: none;
+  padding: 2%;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  height: 650px;
+  width: 600px;
+  top: 15vh;
+  bottom: 15vh;
+  left: 25vw;
+  right: 25vw;
+  opacity: 1;
+  z-index: 2
 }
+
+.modal img {
+  z-index: 5;
+  opacity: 1;
+}
+.close-modal {
+  float: right;
+  padding-bottom: 2%;
+}
+

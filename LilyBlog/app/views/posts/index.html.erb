@@ -3,10 +3,11 @@
   <%= link_to 'New Post', new_post_path %>
 <% end %>
 
-<div class="post-container">
+<div class='modal'></div>
 
+<div class="post-container">
   <% @posts.each do |post| %>
-    <div class="post">
+     <%= tag("div", :class => "post", :data => {:id => post.id, :title => post.title, :body => post.body, :url => post.image_url.to_s }) %>
       <div class="image">
         <%= link_to post_path(post.id) do %>
         <%= image_tag(post.image_url.to_s)%>
@@ -15,4 +16,6 @@
     </div>
   <% end %>
 
+
 </div>
+
