@@ -25,9 +25,14 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-
+    p "HI PATRICIA"
+    p @post
     respond_to do |format|
+      p "HI PATRICIA"
+      p @post
       if @post.save
+        p "HI PATRICIA IT SAVED!"
+        p @post
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
@@ -64,7 +69,7 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post = Post.friendly.find(params[:id])
+      @post = Post.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

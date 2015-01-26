@@ -30,11 +30,8 @@ ActiveRecord::Schema.define(version: 20150125182441) do
     t.integer  "posts_color_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "slug"
     t.string   "image"
   end
-
-  add_index "posts", ["slug"], name: "index_posts_on_slug"
 
   create_table "posts_categories", force: true do |t|
     t.integer "post_id"
