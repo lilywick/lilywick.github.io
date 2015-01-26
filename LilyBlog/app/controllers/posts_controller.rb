@@ -34,8 +34,11 @@ class PostsController < ApplicationController
 
 
   def update
+    @post = Post.find(params[:id])
+    p "HI PATRICIA"
+    p @post
     respond_to do |format|
-      if @post.update(post_params)
+      if @post.update(title: params[:title], body: params[:body], posts_color_id: params[:posts_color_id], posts_color_id: params[:posts_category_id])
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @post }
       else
@@ -56,7 +59,7 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post = Post.friendly.find(params[:id])
+      @post = Post.find(params[:id])
     end
 
     def post_params
