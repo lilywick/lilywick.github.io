@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
 $(function(){
-  $('.posts-container').center();
   setupPosts();
   $(window).resize(setupPosts); 
+  $('.posts-container').center();
+
 });
 
 
@@ -40,8 +41,8 @@ $(function(){
         var leftPos = margin+(index*(colWidth+margin));
         debugger
         $(this).css({
-            'left':(leftPos+ spaceLeft)/18 +'%',
-            'top':min/7+'%'
+            'left':leftPos+ spaceLeft+'px',
+            'top':min+'px'
         });
         posts[index] = min + $(this).outerHeight()+margin;
     });
