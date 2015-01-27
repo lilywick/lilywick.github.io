@@ -1,11 +1,7 @@
 $(document).ready(function(){
 
-$(function(){
-  setupPosts();
-  $(window).resize(setupPosts); 
-  $('.posts-container').center();
 
-});
+
 
 
   jQuery.fn.center = function () {
@@ -15,43 +11,7 @@ $(function(){
     return this;
   }
 
-  var colCount = 0;
-  var colWidth = 0;
-  var margin = 20;
-  var windowWidth = 0;
-  var spaceLeft = 0;
-  var posts = [];
-
-  function setupPosts() {
-      windowWidth = $(window).width();
-      colWidth = $('.post').outerWidth();
-      // colCount = Math.floor(windowWidth/(colWidth+margin));
-      colCount = Math.floor(windowWidth/(colWidth+margin*2));
-      spaceLeft = (windowWidth - ((colWidth*colCount)+(margin*(colCount-1)))) / 2;
-      for(var i=0; i < colCount; i++) {
-        posts.push(margin);
-      }
-      positionPosts();
-  }
-
-  function positionPosts() {
-    $('.post').each(function(){
-        var min = Array.min(posts);
-        var index = $.inArray(min, posts);
-        var leftPos = margin+(index*(colWidth+margin));
-        debugger
-        $(this).css({
-            'left':leftPos+ spaceLeft+'px',
-            'top':min+'px'
-        });
-        posts[index] = min + $(this).outerHeight()+margin;
-    });
-}
-
-  // Function to get the Min value in Array
-  Array.min = function(array) {
-      return Math.min.apply(Math, array);
-  };
+  
 
   $(".post").click(function(e){
     e.preventDefault();
