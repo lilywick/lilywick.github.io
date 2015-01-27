@@ -3,15 +3,28 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .post-container {
-  margin: 6%;
-  border: 1px solid black;
+  min-height: 100%;
+  width: 90%;
 }
+
 .post {
-  display: inline-block;
-  max-height: 600px;
-  margin: 0%;
-  border: 1px solid black;
-  z-index: -1;
+  position: absolute;
+  width: 20%;
+
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+  
+img {
+  position: relative;
+  width: 90%;
 }
 
 .modal {
