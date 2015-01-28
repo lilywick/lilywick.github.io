@@ -15,12 +15,12 @@ body {
 
 .post-container {
   position: absolute;
-  top: 40%;
+  top: 60%;
 }
 
 img {
   position: absolute;
-  width: 350px;
+  width: 400px;
   padding: 10px;
   }
 
@@ -47,7 +47,8 @@ img {
   left: 25vw;
   right: 25vw;
   opacity: 1;
-  z-index: 2
+  z-index: 2;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .modal.post-content {
@@ -62,7 +63,19 @@ img {
 
 .close-modal {
   float: right;
-  padding-bottom: 2%;
+  padding: 3%;
 }
 
+#header {
+  position: absolute;
+  bottom: 60%;
+  width: 100%;
+  border-bottom: 0.5em solid black;
+  font-family: 'Syncopate', sans-serif;
+}
 
+#header h1 {
+  color: black;
+  font-size: 5em;
+  text-align: center;
+}

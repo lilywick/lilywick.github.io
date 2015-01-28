@@ -7,13 +7,14 @@
   <%= csrf_meta_tags %>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" type="text/javascript"></script>
+  <link href="http://fonts.googleapis.com/css?family=Syncopate|Quicksand" rel="stylesheet" type="text/css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <script type="text/javascript">
   
   var colCount = 0;
-  var colWidth = 350;
+  var colWidth = 400;
   var margin = 10;
   var windowWidth = 0;
   var spaceLeft = 0;
@@ -61,7 +62,10 @@
 </script>
 
 <body onload="setupPosts();">
-<h1>LILY WICK</h1>
+
+<div id="header">
+  <h1>LILY WICK</h1>
+</div>
 <%= yield %>
 
 </body>

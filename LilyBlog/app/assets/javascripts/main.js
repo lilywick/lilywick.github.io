@@ -21,10 +21,9 @@ $(document).ready(function(){
     if ( $(this).data("body") == "") {
       $('h3').hide();
     }
-    
+
     $('.modal').center().show();
     $('.post-content').css("position", "relative");
-    $('.close-modal').css("padding", "3%");
     $('.title').css("padding", "3%");
     $('h3').css("position", "relative");
     $('h3').css("background-color", "white");
@@ -36,11 +35,11 @@ $(document).ready(function(){
     $('.image').css("top", "7%");
     $('.post').css("opacity", "0.25");
 
-    // $('.close-modal').click(function(e){
-    //   e.preventDefault()
-    //   $('.modal').hide();
-    //   $('.post').css("opacity", "1")
-    // });
+    $('.close-modal').click(function(e){
+      e.preventDefault()
+      $('.modal').hide();
+      $('.post').css("opacity", "1")
+    });
   });
 
 });
