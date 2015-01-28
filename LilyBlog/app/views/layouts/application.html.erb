@@ -13,46 +13,50 @@
 <script type="text/javascript">
   
   var colCount = 0;
-  var colWidth = 300;
+  var colWidth = 350;
   var margin = 10;
   var windowWidth = 0;
   var spaceLeft = 0;
   var posts = [];
 
-  $(function(){
   $(window).resize(setupPosts);
-});
 
   function setupPosts() {
       windowWidth = $(window).width();
       posts = [];
-      // colWidth = $('.post').outerWidth();
-      // colCount = Math.floor(windowWidth/(colWidth+margin));
-      colCount = Math.floor(windowWidth/(colWidth+margin*2));
-      spaceLeft = (windowWidth - ((colWidth*colCount)+(margin*(colCount-1)))) / 2;
-      for(var i=0; i < colCount; i++) {
+      colWidth = $('img').outerWidth();
+      colCount = Math.floor(windowWidth / (colWidth + margin * 2));
+      spaceLeft = (windowWidth - ((colWidth * colCount) + (margin * (colCount - 1)))) / 2;
+      for (var i = 0; i < colCount; i++) {
         posts.push(margin);
       }
       positionPosts();
   }
 
   function positionPosts() {
-    $('.post').each(function(){
+    $('img').each(function(){
         var min = Array.min(posts);
         var index = $.inArray(min, posts);
-        var leftPos = margin+(index*(colWidth+margin));
+        var leftPos = margin + (index * (colWidth + margin));
         $(this).css({
-            'left':(leftPos+ spaceLeft)+'px',
-            'top':min+'px'
+            'left': (leftPos+ spaceLeft) + 'px',
+            'top': min + 'px'
         });
-        posts[index] = min + $(this).outerHeight()+margin;
-    });
-}
+        posts[index] = min + $(this).outerHeight() + margin;
 
-  // Function to get the Min value in Array
+    });
+  }
+
   Array.min = function(array) {
       return Math.min.apply(Math, array);
   };
+
+  jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", ( jQuery(window).height() - this.height() ) / 2+jQuery(window).scrollTop() + "px");
+    this.css("left", ( jQuery(window).width() - this.width() ) / 2+jQuery(window).scrollLeft() + "px");
+    return this;
+  }
 
 </script>
 

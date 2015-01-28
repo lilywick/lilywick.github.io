@@ -1,43 +1,46 @@
 $(document).ready(function(){
 
-
-
-
-
-  jQuery.fn.center = function () {
-    this.css("position","absolute");
-    this.css("top", ( jQuery(window).height() - this.height() ) / 2+jQuery(window).scrollTop() + "px");
-    this.css("left", ( jQuery(window).width() - this.width() ) / 2+jQuery(window).scrollLeft() + "px");
-    return this;
-  }
-
-  
-
-  $(".post").click(function(e){
+  $('.post').click(function(e){
     e.preventDefault();
     $('.modal').html(
-      "<a href='#' class='close-modal'>Close(X)</a>" +   
+      "<a href='/' class='close-modal'>Close(X)</a>" +   
 
-      "<div class='title'>" + 
-        $(this).data("title") +
-      "</div>" +
-      "<div class='image'>" +
-        "<img src= " +  $(this).data("url") + ">"+
-      "</div>" +
+      "<div class='post-content'>" +
 
-      "<div class='body'>" +
-         $(this).data("body") +
-      "</div>"      
+        "<h1 class='title'>" + 
+          $(this).data("title") +
+        "</h1>" +
+        "<div class='image'>" +
+          "<img src= " +  $(this).data("url") + ">"+
+        "</div>" +
+
+         "<h3>" + $(this).data("body") + "</h3>" +
+      "</div>"  
       )
 
+    if ( $(this).data("body") == "") {
+      $('h3').hide();
+    }
+    
     $('.modal').center().show();
-    $('.post').css("opacity", "0.25")
+    $('.post-content').css("position", "relative");
+    $('.close-modal').css("padding", "3%");
+    $('.title').css("padding", "3%");
+    $('h3').css("position", "relative");
+    $('h3').css("background-color", "white");
+    $('h3').css("padding", "3%");
+    $('h3').css("margin-top", "-25%");
+    $('.image').css("position", "relative");
+    $('.image').css("margin-bottom", "-15%");
+    $('.image').css("margin-right", "40%");
+    $('.image').css("top", "7%");
+    $('.post').css("opacity", "0.25");
 
-
-    $('.close-modal').click(function(){
-      $('.close-modal').parent().hide();
-      $('.post').css("opacity", "1")
-    });
+    // $('.close-modal').click(function(e){
+    //   e.preventDefault()
+    //   $('.modal').hide();
+    //   $('.post').css("opacity", "1")
+    // });
   });
 
 });
